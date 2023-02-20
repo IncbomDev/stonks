@@ -1,0 +1,25 @@
+name: ${project.name}
+version: ${project.version}
+main: fr.lezoo.stonks.Stonks
+author: [ ka0rX, Indyuce ]
+depend: [ Vault ]
+soft-depend: [ PlaceholderAPI ]
+description: ${project.description}
+api-version: 1.13
+
+commands:
+  stonks:
+    description: 'Main plugin command.'
+  portfolio:
+    description: 'All you shares are available here.'
+  redeemdividends:
+    description: 'Claims dividends from owned shares.'
+  stocks:
+    description: 'Displays the list of stocks'
+
+permissions:
+  stonks.admin:
+    default: op
+  stonks.stock-list:
+    description: 'Ability to use /stocks'
+    default: op
